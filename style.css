@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F5F5DC; /* Cream */
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #800020; /* Burgundy */
+    color: #F5F5DC;
+    padding: 1rem;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #F5F5DC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold for hover */
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 1rem;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #800020; /* Burgundy border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.dots {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #800020; /* Burgundy */
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.parallax-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://via.placeholder.com/1920x1080/800020/FFFFFF?text=Background'); /* Placeholder for parallax image */
+    color: #F5F5DC;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #800020;
+    margin-bottom: 1rem;
+}
+
+.parallax-section h1, .parallax-section h2 {
+    color: #F5F5DC;
+}
+
+.education-item, .experience-item, .project-item {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(245, 245, 220, 0.9); /* Semi-transparent cream */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background-color: #800020;
+    color: #F5F5DC;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    background-color: #A52A2A; /* Darker burgundy */
+}
+
+.btn {
+    background-color: #800020;
+    color: #F5F5DC;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #A52A2A;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #800020;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #800020;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    .slideshow-container {
+        max-width: 300px;
+    }
+    .slide img {
+        width: 100%;
+    }
+}

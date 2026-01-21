@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="parallax-section">
+        <div class="content">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="profile1.jpg" alt="Profile Photo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="profile2.jpg" alt="Profile Photo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="profile3.jpg" alt="Profile Photo 3">
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <h1>About Me</h1>
+            <p>Hello! I'm a passionate professional with a background in [your field]. I love creating innovative solutions and bringing ideas to life. This portfolio showcases my journey and work.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>University of the Cordilleras, 2023-2026</p>
+                <p>Relevant coursework: Data Structures, Algorithms, Web Development.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="parallax-section">
+        <div class="content">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Software Developer</h3>
+                <p>Company Name, 2022-Present</p>
+                <p>Developed web applications using HTML, CSS, and JavaScript. Collaborated on team projects and improved user interfaces.</p>
+            </div>
+            <!-- Add more experience items as needed -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML/CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">UI/UX Design</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="parallax-section">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio built with HTML, CSS, and JavaScript featuring parallax scrolling.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Information</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
