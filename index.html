@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,13 +28,13 @@
         <div class="content">
             <div class="slideshow-container">
                 <div class="slide fade">
-                    <img src="profile1.jpg" alt="Profile Photo 1">
+                    <img src="assets/profile1.jpg" alt="Profile Photo 1">
                 </div>
                 <div class="slide fade">
-                    <img src="profile2.jpg" alt="Profile Photo 2">
+                    <img src="assets/profile2.jpg" alt="Profile Photo 2">
                 </div>
                 <div class="slide fade">
-                    <img src="profile3.jpg" alt="Profile Photo 3">
+                    <img src="assets/profile3.jpg" alt="Profile Photo 3">
                 </div>
             </div>
             <div class="dots">
@@ -40,8 +42,14 @@
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <h1>About Me</h1>
-            <p>Hello! I'm a passionate professional with a background in [your field]. I love creating innovative solutions and bringing ideas to life. This portfolio showcases my journey and work.</p>
+            <h1>Cadhla Zaira Kalea, Web Developer</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            <h2>About Me</h2>
+            <p class="aboutme">I am a dedicated and passionate IT student specializing in software development and systems analysis. I thrive on creating efficient solutions and continuously expanding my technical skills.</p>
         </div>
     </section>
 
@@ -51,20 +59,24 @@
             <div class="education-item">
                 <h3>Bachelor of Science in Information Technology</h3>
                 <p>University of the Cordilleras, 2023-2026</p>
-                <p>Relevant coursework: Data Structures, Algorithms, Web Development.</p>
+                <p>Relevant coursework: Systems Analysis, Web Applications & Project-Based Development.</p>
             </div>
         </div>
     </section>
 
     <section id="experience" class="parallax-section">
         <div class="content">
-            <h2>Experience</h2>
+            <h2 style="color: black;">Experience</h2>
             <div class="experience-item">
-                <h3>Software Developer</h3>
-                <p>Company Name, 2022-Present</p>
-                <p>Developed web applications using HTML, CSS, and JavaScript. Collaborated on team projects and improved user interfaces.</p>
+                <h3 style="color: black;">Freelance Software Developer</h3>
+                <p style="color: brown;">Booking System, 2025</p>
+                <p style="color: #555;">Developed a web application using HTML, JSON, and JavaScript.</p>
             </div>
-            <!-- Add more experience items as needed -->
+            <div class="experience-item">
+                <h3 style="color: black;">Systems Analyst</h3>
+                <p style="color: brown;">Proposed IT-based Solutions, CC13</p>
+                <p style="color: #555;">Proposed a SMART study on Il PAdrino's Point-of-Sale System</p>
+            </div>
         </div>
     </section>
 
@@ -74,7 +86,8 @@
             <div class="skills-grid">
                 <div class="skill-item">HTML/CSS</div>
                 <div class="skill-item">JavaScript</div>
-                <div class="skill-item">React</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">SQL</div>
                 <div class="skill-item">Node.js</div>
                 <div class="skill-item">Python</div>
                 <div class="skill-item">UI/UX Design</div>
@@ -84,11 +97,11 @@
 
     <section id="projects" class="parallax-section">
         <div class="content">
-            <h2>Projects</h2>
+            <h2 style="color: black;">Projects</h2>
             <div class="project-item">
-                <h3>Portfolio Website</h3>
-                <p>A responsive portfolio built with HTML, CSS, and JavaScript featuring parallax scrolling.</p>
-                <a href="#" class="btn">View Project</a>
+                <h3 style="color: brown;">Booking System</h3>
+                <p style="color: #555;">A responsive booking system built with HTML, Tailwind, JavaScript, and JSON</p>
+                <a href="https://booking-system-hzb6.vercel.app/" class="btn">View Project</a>
             </div>
             <!-- Add more project items as needed -->
         </div>
@@ -97,9 +110,9 @@
     <section id="contact">
         <div class="content">
             <h2>Contact Information</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <p>Email: cadhlazairakalea@gmail.com</p>
+            <p>Phone: (+63) 956 390 7620</p>
+            <p>LinkedIn: <a href="www.linkedin.com/in/cadhla-zaira-kalea-cruz">Cadhla Zaira Kalea Cruz</a></p>
             <form id="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
@@ -110,7 +123,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Cadhla Zaira Kalea Cruz. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
